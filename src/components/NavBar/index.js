@@ -1,6 +1,7 @@
 import React from "react";
-import "./navbar.css";
+import "./nav.css";
 import Button from "../../form/Button";
+
 const Navbar = ({ connectWallet }) => {
   const [showNav, setShowNav] = React.useState(false);
   const [walletOpen, setWalletOpen] = React.useState(false);

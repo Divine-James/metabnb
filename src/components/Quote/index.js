@@ -1,5 +1,5 @@
 import React from "react";
-import "./inspiration.css";
+import "./quote.css";
 
 //datas
 const data = [

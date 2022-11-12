@@ -1,5 +1,5 @@
 import React from "react";
-import "./nft_talk.css";
+import "./nft.css";
 import Button from "../../form/Button/index";
 
 const NftTalk = () => {

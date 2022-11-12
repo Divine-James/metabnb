@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../form/Button";
 import SearchInput from "../../form/SearchInput";
 import Hero from "../Hero";
-import "../Navbar/navbar.css";
+import "../NavBar/nav.css";
 import "../Hero/hero.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
