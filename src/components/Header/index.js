@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../../form/Button";
 import SearchInput from "../../form/SearchInput";
-import Hero from "../Hero";
+//import Hero from "../Hero";
 import "../NavBar/nav.css";
 import "../Hero/hero.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import Typography from "@mui/material/Typography";
+//import Typography from "@mui/material/Typography";
 
 const style = {
   position: "absolute",
@@ -48,7 +48,7 @@ export const Header = () => {
               </a>
             </li>
             <li className="nav-list-item">
-              <a href="/" className="nav-link">
+              <a href="/place-to-stay" className="nav-link">
                 Place to stay
               </a>
             </li>

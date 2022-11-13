@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Navbar/navbar.css";
+import "../../NavBar/nav.css";
 import "../../Hero/hero.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";

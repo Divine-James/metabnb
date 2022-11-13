@@ -1,5 +1,5 @@
 import React from "react";
-import ImgGallery from "../ImgGallery";
+import Gallery from "../Gallery";
 
 //datas
 const data = [
@@ -168,7 +168,7 @@ const data = [
 const Imgs = () => {
   return (
     <div className="container space-top">
-      <ImgGallery data={data} />
+      <Gallery data={data} />
     </div>
   );
 };

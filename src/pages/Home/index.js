@@ -2,8 +2,8 @@ import React from "react";
 import Clients from "../../components/Clients";
 import Footer from "../../components/Footer";
 import { Header } from "../../components/Header";
-import Hero from "../../components/Hero";
-import Quote from "../../components/Quote";
+//import Hero from "../../components/Hero";
+import Adventure from "../../components/Adventure";
 import Nft from "../../components/Nft";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Header />
       <Clients />
-      <Quote />
+      <Adventure />
       <Nft />
       <Footer />
     </>

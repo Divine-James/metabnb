@@ -1,5 +1,5 @@
 import React from "react";
-import "./quote.css";
+import "./adventure.css";
 
 //datas
 const data = [
@@ -77,7 +77,7 @@ const data = [
   },
 ];
 
-const Inspiration = () => {
+const Adventure = () => {
   return (
     <section className="container inspiration">
       <h1 className="red-rose-font text-center">
@@ -113,4 +113,4 @@ const Inspiration = () => {
   );
 };
 
-export default Inspiration;
+export default Adventure;
