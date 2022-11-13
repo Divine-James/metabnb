@@ -1,12 +1,10 @@
 import React from "react";
 import Button from "../../form/Button";
 import SearchInput from "../../form/SearchInput";
-//import Hero from "../Hero";
 import "../NavBar/nav.css";
 import "../Hero/hero.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-//import Typography from "@mui/material/Typography";
 
 const style = {
   position: "absolute",
@@ -23,58 +21,65 @@ const style = {
 export const Header = () => {
   const [showNav, setShowNav] = React.useState(false);
   const [walletOpen, setWalletOpen] = React.useState(false);
-  const handleWalletOpen = () => setWalletOpen(true);
   const handleWalletClose = () => setWalletOpen(false);
+
+  const callbackFn = () => {
+    setShowNav(!showNav);
+    setWalletOpen(!walletOpen);
+  };
 
   return (
     <>
       <nav
-        className={`nav nav-flex nav-items-center-between container ${
+        className={`nav sticky bg-light width-full   ${
           showNav ? "open-menu" : ""
         }`}
       >
-        <div className="nav-logo">
-          <img
-            src="assets/img/logo.svg"
-            alt="brand logo"
-            className="width-medium-1"
-          />
-        </div>
-        <div className="nav-flex responsive-navbar">
-          <ul className="nav-lists">
-            <li className="nav-list-item">
-              <a href="/" className="nav-link">
-                Home
-              </a>
-            </li>
-            <li className="nav-list-item">
-              <a href="/place-to-stay" className="nav-link">
-                Place to stay
-              </a>
-            </li>
-            <li className="nav-list-item">
-              <a href="/nfts" className="nav-link">
-                NFTs
-              </a>
-            </li>
-            <li className="nav-list-item">
-              <a href="/community" className="nav-link">
-                Community
-              </a>
-            </li>
-          </ul>
+        <div className="container nav-items-center-between nav-flex ">
+          <div className="nav-logo">
+            <img
+              src="assets/img/logo.svg"
+              alt="brand logo"
+              className="width-medium-1"
+            />
+          </div>
+          <div className="nav-flex responsive-navbar">
+            <ul className="nav-lists">
+              <li className="nav-list-item">
+                <a href="/" className="nav-link">
+                  Home
+                </a>
+              </li>
+              <li className="nav-list-item">
+                <a href="/place_to_stay" className="nav-link">
+                  Place To Stay
+                </a>
+              </li>
+              <li className="nav-list-item">
+                <a href="/nfts" className="nav-link">
+                  NFTs
+                </a>
+              </li>
+              <li className="nav-list-item">
+                <a href="/community" className="nav-link">
+                  Community
+                </a>
+              </li>
+            </ul>
+            <Button
+              text="Connect Wallet"
+              onClick={callbackFn}
+              classes="btn nav-with-btn btn-purple btn-rounded"
+            />
+          </div>
           <Button
+            onClick={() => setWalletOpen(!walletOpen)}
             text="Connect Wallet"
-            classes="btn nav-with-btn btn-purple btn-rounded"
+            classes="btn nav-main-btn btn-purple btn-rounded"
           />
-        </div>
-        <Button
-          onClick={() => setWalletOpen(!walletOpen)}
-          text="Connect Wallet"
-          classes="btn nav-main-btn btn-purple btn-rounded"
-        />
-        <div className="toggle-nav" onClick={() => setShowNav(!showNav)}>
-          <img src="assets/img/hamburger.png" alt="" className="" />
+          <div className="toggle-nav" onClick={() => setShowNav(!showNav)}>
+            <img src="assets/img/hamburger.png" alt="" className="" />
+          </div>
         </div>
       </nav>
       {/* herro section  */}
@@ -85,7 +90,7 @@ export const Header = () => {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <Box sx={style}>
+          <Box sx={style} className="mobile-res">
             <div className="modal-head item-flex justify-between border-bottom width-full">
               <h3 className="red-rose-font space-left">Connect Wallet</h3>
               <p
