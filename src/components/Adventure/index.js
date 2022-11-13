@@ -79,7 +79,7 @@ const data = [
 
 const Adventure = () => {
   return (
-    <section className="container inspiration">
+    <section className="container adventure">
       <h1 className="red-rose-font text-center">
         Inspiration for your next adventure
       </h1>
@@ -89,20 +89,20 @@ const Adventure = () => {
             <img
               src={item.img}
               alt={item.name}
-              className="inspiration-data-img"
+              className="adventure-data-img"
             />
             <div className="data-img-grid-item-desc width-full space-up-down text-dark">
               <div className="item-flex items-center justify-between">
-                <h3 className="inspiration-data-title red-rose-font">
+                <h3 className="adventure-data-title red-rose-font">
                   {item.name}
                 </h3>
-                <p className="inspiration-data-desc">{item.desc}</p>
+                <p className="adventure-data-desc">{item.desc}</p>
               </div>
-              <div className="inspiration-duration-item item-flex items-center justify-between">
+              <div className="adventure-duration-item item-flex items-center justify-between">
                 <p>{item.distance}</p>
                 <p>{item.duration}</p>
               </div>
-              <div className="inspiration-data-img-rating">
+              <div className="adventure-data-img-rating">
                 <img src={item.rating} alt="rating" className="" />
               </div>
             </div>

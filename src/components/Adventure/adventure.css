@@ -1,4 +1,4 @@
-.inspiration h1 {
+.adventure h1 {
   font-size: 48px;
   font-weight: 700;
   text-align: center;
@@ -16,19 +16,19 @@
   border-radius: 15px;
 }
 
-.inspiration-data-title,
-.inspiration-data-desc,
-.inspiration-duration-item {
+.adventure-data-title,
+.adventure-data-desc,
+.adventure-duration-item {
   font-size: 12px;
 }
 
-.inspiration-data-img-rating {
+.adventure-data-img-rating {
   width: 100px;
   height: 12px;
 }
 
 @media screen and (max-width: 600px) {
-  .inspiration h1 {
+  .adventure h1 {
     font-size: 32px;
   }
   .data-img-grid-item {
