@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Gallery = ({ data }) => {
   return (
     <div className="data-img img-grid-items-4">
       {data.map((item) => (
         <div className="data-img-grid-item" key={item.id}>
-          <img
+          <LazyLoadImage
             key={item.id}
             src={item.img}
             alt={item.name}
