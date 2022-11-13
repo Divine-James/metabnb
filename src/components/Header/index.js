@@ -51,7 +51,7 @@ export const Header = () => {
                 </a>
               </li>
               <li className="nav-list-item">
-                <a href="/place_to_stay" className="nav-link">
+                <a href="/place-to-stay" className="nav-link">
                   Place To Stay
                 </a>
               </li>
