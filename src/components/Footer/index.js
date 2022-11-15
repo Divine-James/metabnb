@@ -118,14 +118,14 @@ const Footer = () => {
             </li>
             <li>
               {" "}
-              <a className="text-light red-rose-font" href="/carear">
-                Carear
+              <a className="text-light red-rose-font" href="/career">
+                Career
               </a>
             </li>
             <li>
               {" "}
               <a className="text-light red-rose-font" href="/contact">
-                Contactus
+                Contact us
               </a>
             </li>
           </ul>

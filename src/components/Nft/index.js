@@ -2,7 +2,7 @@ import React from "react";
 import "./nft.css";
 import Button from "../../form/Button/index";
 
-const NftTalk = () => {
+const Nft = () => {
   return (
     <section className="bg-purple nft-talk">
       <div className="container item-flex items-center justify-center img-grid-items-2 ">
@@ -26,4 +26,4 @@ const NftTalk = () => {
   );
 };
 
-export default NftTalk;
+export default Nft;
