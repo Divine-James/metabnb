@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 400px) and (max-width: 1024px) {
   .data-img-grid-item {
-    width: 350px;
+    width: 300px;
     height: max-content;
   }
 }
