@@ -1,0 +1,58 @@
+.love-image {
+  width: 17px;
+  height: 17px;
+  z-index: 10;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+.position {
+  position: relative;
+}
+.adventure-img {
+  border-radius: 10px;
+  height: 250px;
+}
+
+.data-img-grid-item {
+  width: 280px;
+  height: 372px;
+
+  padding: 1rem;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+  position: relative;
+}
+.data-img {
+  margin-bottom: 5rem;
+}
+.inspiration-data-title,
+.inspiration-data-desc,
+.inspiration-duration-item {
+  font-size: 12px;
+}
+
+.inspiration-data-img-rating {
+  width: 100px;
+  height: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .inspiration h1 {
+    font-size: 32px;
+  }
+  .data-img-grid-item {
+    width: 350px;
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1024px) {
+  .data-img-grid-item {
+    width: 350px;
+    height: max-content;
+  }
+}

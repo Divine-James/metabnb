@@ -9,7 +9,10 @@
   /* margin-top: 1rem; */
   margin-bottom: 3rem;
 }
-
+.purple {
+  color: #a02279;
+  overflow: hidden;
+}
 .hero-text-content {
   margin-top: 1rem;
   padding: 1rem;

@@ -6,6 +6,7 @@ const data = [
   {
     id: 1,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king1.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -15,6 +16,7 @@ const data = [
   {
     id: 2,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king2.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -24,6 +26,7 @@ const data = [
   {
     id: 3,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king3.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -33,6 +36,7 @@ const data = [
   {
     id: 4,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king4.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -42,6 +46,7 @@ const data = [
   {
     id: 5,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king5.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -51,6 +56,7 @@ const data = [
   {
     id: 6,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king6.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -60,6 +66,7 @@ const data = [
   {
     id: 7,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king7.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -69,6 +76,7 @@ const data = [
   {
     id: 8,
     name: "Desert King",
+    love: "assets/img/vector.png",
     img: "assets/img/desert-king8.png",
     desc: "1MBT per night",
     distance: "2345km away",
@@ -86,11 +94,12 @@ const Adventure = () => {
       <div className="data-img img-grid-items-4">
         {data.map((item) => (
           <div className="data-img-grid-item" key={item.id}>
-            <img
-              src={item.img}
-              alt={item.name}
-              className="adventure-data-img"
-            />
+            <div className="position">
+              <img src={item.love} alt="love" className="love-image" />
+
+              <img src={item.img} alt={item.name} className="adventure-img" />
+            </div>
+
             <div className="data-img-grid-item-desc width-full space-up-down text-dark">
               <div className="item-flex items-center justify-between">
                 <h3 className="adventure-data-title red-rose-font">

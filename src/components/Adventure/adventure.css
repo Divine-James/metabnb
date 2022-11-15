@@ -7,7 +7,7 @@
 
 .data-img-grid-item {
   width: 280px;
-  height: 372px;
+  height: 350px;
 
   padding: 1rem;
   background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
@@ -20,6 +20,21 @@
 .adventure-data-desc,
 .adventure-duration-item {
   font-size: 12px;
+}
+.love-image {
+  width: 17px;
+  height: 17px;
+  z-index: 10;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.position {
+  position: relative;
+}
+.adventure-img {
+  border-radius: 10px;
+  height: 250px;
 }
 
 .adventure-data-img-rating {

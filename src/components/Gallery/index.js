@@ -7,17 +7,20 @@ const Gallery = ({ data }) => {
     <div className="data-img img-grid-items-4">
       {data.map((item) => (
         <div className="data-img-grid-item" key={item.id}>
-          <LazyLoadImage
-            key={item.id}
-            src={item.img}
-            alt={item.name}
-            effect="blur"
-            placeholderSrc={item.img}
-            className="inspiration-data-img"
-          />
-          <div className="fav-heart fav-active">
-            {/* <img src={item.fav} alt="favorite" className="fav_heart-img" /> */}
+          <div className="position">
+            <div>
+              <img src={item.love} alt="love" className="love-image" />
+            </div>
+            <LazyLoadImage
+              key={item.id}
+              src={item.img}
+              alt={item.name}
+              effect="blur"
+              placeholderSrc={item.img}
+              className="adventure-img"
+            />
           </div>
+
           <div className="data-img-grid-item-desc width-full space-up-down text-dark">
             <div className="item-flex items-center justify-between">
               <h3 className="inspiration-data-title red-rose-font">

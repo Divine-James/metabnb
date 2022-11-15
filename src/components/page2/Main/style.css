@@ -5,10 +5,13 @@
 }
 
 .priorites li {
-  margin-right: 50px;
   font-weight: 400;
   font-size: 20px;
   color: #434343;
+  margin-bottom: 3rem;
+}
+.priorites li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .priorities__select {

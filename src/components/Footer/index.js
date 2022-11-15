@@ -21,7 +21,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://zuri.com/fb">
+              <a href="https://zuri.com/ig">
                 <img
                   src="assets/img/ig_icon.svg"
                   alt=""
@@ -30,7 +30,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://zuri.com/fb">
+              <a href="https://zuri.com/twitter">
                 <img
                   src="assets/img/twitter_icon.svg"
                   alt=""
